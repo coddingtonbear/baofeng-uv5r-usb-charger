@@ -1,0 +1,363 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:coddingtonbear
+LIBS:buuc-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L USB_OTG P1
+U 1 1 59AF531F
+P 1650 1150
+F 0 "P1" V 1680 1338 50  0000 L CNN
+F 1 "USB_OTG" V 1771 1338 50  0000 L CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:MICRO-B_USB-INVERTED" V 1600 1050 50  0001 C CNN
+F 3 "" V 1600 1050 50  0000 C CNN
+	1    1650 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L MCP73842-840I/UN U2
+U 1 1 59AF5FE9
+P 4950 3450
+F 0 "U2" H 4925 2920 60  0000 C CNN
+F 1 "MCP73842-840I/UN" H 4925 2814 60  0000 C CNN
+F 2 "mcous/kicad-lib/footprints/soic.pretty:SOIC8" H 4950 3450 60  0001 C CNN
+F 3 "" H 4950 3450 60  0001 C CNN
+	1    4950 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L BOOST_REGULATOR U1
+U 1 1 59AF6228
+P 1650 2600
+F 0 "U1" H 1625 2937 60  0000 C CNN
+F 1 "BOOST_REGULATOR" H 1625 2831 60  0000 C CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:BOOST_REGULATOR" H 1650 2600 60  0001 C CNN
+F 3 "" H 1650 2600 60  0001 C CNN
+	1    1650 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR01
+U 1 1 59AF62AD
+P 1250 950
+F 0 "#PWR01" H 1250 800 50  0001 C CNN
+F 1 "+5V" V 1265 1078 50  0000 L CNN
+F 2 "" H 1250 950 50  0000 C CNN
+F 3 "" H 1250 950 50  0000 C CNN
+	1    1250 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +5V #PWR02
+U 1 1 59AF62D9
+P 1000 2550
+F 0 "#PWR02" H 1000 2400 50  0001 C CNN
+F 1 "+5V" H 1015 2723 50  0000 C CNN
+F 2 "" H 1000 2550 50  0000 C CNN
+F 3 "" H 1000 2550 50  0000 C CNN
+	1    1000 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 59AF6327
+P 1000 2650
+F 0 "#PWR03" H 1000 2400 50  0001 C CNN
+F 1 "GND" H 1005 2477 50  0000 C CNN
+F 2 "" H 1000 2650 50  0000 C CNN
+F 3 "" H 1000 2650 50  0000 C CNN
+	1    1000 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 59AF634E
+P 2250 2650
+F 0 "#PWR04" H 2250 2400 50  0001 C CNN
+F 1 "GND" H 2255 2477 50  0000 C CNN
+F 2 "" H 2250 2650 50  0000 C CNN
+F 3 "" H 2250 2650 50  0000 C CNN
+	1    2250 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 59AF6362
+P 1250 1350
+F 0 "#PWR05" H 1250 1100 50  0001 C CNN
+F 1 "GND" H 1255 1177 50  0000 C CNN
+F 2 "" H 1250 1350 50  0000 C CNN
+F 3 "" H 1250 1350 50  0000 C CNN
+	1    1250 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 950  1350 950 
+Wire Wire Line
+	1250 1350 1350 1350
+Wire Wire Line
+	2100 2650 2250 2650
+Wire Wire Line
+	1000 2650 1150 2650
+Wire Wire Line
+	1000 2550 1150 2550
+$Comp
+L VCC #PWR06
+U 1 1 59AF63A7
+P 2250 2550
+F 0 "#PWR06" H 2250 2400 50  0001 C CNN
+F 1 "VCC" H 2267 2723 50  0000 C CNN
+F 2 "" H 2250 2550 50  0000 C CNN
+F 3 "" H 2250 2550 50  0000 C CNN
+	1    2250 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 2550 2250 2550
+$Comp
+L VCC #PWR07
+U 1 1 59AF6811
+P 2800 2800
+F 0 "#PWR07" H 2800 2650 50  0001 C CNN
+F 1 "VCC" H 2817 2973 50  0000 C CNN
+F 2 "" H 2800 2800 50  0000 C CNN
+F 3 "" H 2800 2800 50  0000 C CNN
+	1    2800 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C1
+U 1 1 59AF6882
+P 3100 3250
+F 0 "C1" H 3218 3296 50  0000 L CNN
+F 1 "10u" H 3218 3205 50  0000 L CNN
+F 2 "pelrun/libKiCad/footprint/w_smd_cap.pretty:c_elec_5x5.8" H 3138 3100 50  0001 C CNN
+F 3 "" H 3100 3250 50  0000 C CNN
+	1    3100 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D1
+U 1 1 59AF68CC
+P 2950 2950
+F 0 "D1" H 2950 2734 50  0000 C CNN
+F 1 "D" H 2950 2825 50  0000 C CNN
+F 2 "adamgreig/agg-kicad/agg.pretty:DO-214AA-SMB" H 2950 2950 50  0001 C CNN
+F 3 "" H 2950 2950 50  0000 C CNN
+	1    2950 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 59AF6994
+P 3100 3550
+F 0 "#PWR08" H 3100 3300 50  0001 C CNN
+F 1 "GND" H 3105 3377 50  0000 C CNN
+F 2 "" H 3100 3550 50  0000 C CNN
+F 3 "" H 3100 3550 50  0000 C CNN
+	1    3100 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 59AF69FF
+P 4600 2950
+F 0 "R2" V 4393 2950 50  0000 C CNN
+F 1 "100m" V 4484 2950 50  0000 C CNN
+F 2 "apexelectrix/apex-smd-resistors.pretty:R_0805_HandSoldering" V 4530 2950 50  0001 C CNN
+F 3 "" H 4600 2950 50  0000 C CNN
+	1    4600 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 59AF6A65
+P 4250 3700
+F 0 "D2" H 4242 3445 50  0000 C CNN
+F 1 "LED" H 4242 3536 50  0000 C CNN
+F 2 "adamgreig/agg-kicad/agg.pretty:0805-LED" H 4250 3700 50  0001 C CNN
+F 3 "" H 4250 3700 50  0000 C CNN
+	1    4250 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 59AF6B9E
+P 4050 4050
+F 0 "R1" V 3843 4050 50  0000 C CNN
+F 1 "100k" V 3934 4050 50  0000 C CNN
+F 2 "apexelectrix/apex-smd-resistors.pretty:R_0805_HandSoldering" V 3980 4050 50  0001 C CNN
+F 3 "" H 4050 4050 50  0000 C CNN
+	1    4050 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 2800 2800 2950
+Wire Wire Line
+	3100 2950 3100 3100
+Wire Wire Line
+	3100 3400 3100 3550
+Wire Wire Line
+	3600 2950 3600 4050
+Connection ~ 3600 2950
+Wire Wire Line
+	3600 4050 3900 4050
+Connection ~ 3600 3700
+Wire Wire Line
+	4200 4050 4400 4050
+Wire Wire Line
+	4400 4050 4400 3800
+Wire Wire Line
+	3100 2950 4450 2950
+Wire Wire Line
+	4400 3600 4050 3600
+Wire Wire Line
+	4050 3600 4050 2950
+Connection ~ 4050 2950
+Wire Wire Line
+	4750 2950 4900 2950
+Wire Wire Line
+	4900 2650 4900 3050
+$Comp
+L NDS8434 Q1
+U 1 1 59AF709A
+P 5250 2750
+F 0 "Q1" V 5578 2750 50  0000 C CNN
+F 1 "NDS8434" V 5487 2750 50  0000 C CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:NDS8434" H 5450 2650 50  0001 L CIN
+F 3 "" H 5250 2750 50  0000 L CNN
+	1    5250 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5000 3050 5300 3050
+Wire Wire Line
+	5300 3050 5300 2950
+Wire Wire Line
+	4900 2650 5050 2650
+Connection ~ 4900 2950
+Wire Wire Line
+	5450 3600 5450 2650
+$Comp
+L CP C2
+U 1 1 59AF72A1
+P 5650 3550
+F 0 "C2" H 5768 3596 50  0000 L CNN
+F 1 "10u" H 5768 3505 50  0000 L CNN
+F 2 "pelrun/libKiCad/footprint/w_smd_cap.pretty:c_elec_5x5.8" H 5688 3400 50  0001 C CNN
+F 3 "" H 5650 3550 50  0000 C CNN
+	1    5650 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2600 5650 3400
+Wire Wire Line
+	5450 2650 6350 2650
+Wire Wire Line
+	5650 3700 5450 3700
+$Comp
+L GND #PWR09
+U 1 1 59AF75B2
+P 5650 3800
+F 0 "#PWR09" H 5650 3550 50  0001 C CNN
+F 1 "GND" H 5655 3627 50  0000 C CNN
+F 2 "" H 5650 3800 50  0000 C CNN
+F 3 "" H 5650 3800 50  0000 C CNN
+	1    5650 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3700 5650 3800
+Connection ~ 5650 2650
+$Comp
+L +BATT #PWR010
+U 1 1 59AF7B81
+P 5650 2600
+F 0 "#PWR010" H 5650 2450 50  0001 C CNN
+F 1 "+BATT" H 5665 2773 50  0000 C CNN
+F 2 "" H 5650 2600 50  0000 C CNN
+F 3 "" H 5650 2600 50  0000 C CNN
+	1    5650 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 59AF7BB9
+P 6350 2750
+F 0 "#PWR011" H 6350 2500 50  0001 C CNN
+F 1 "GND" H 6355 2577 50  0000 C CNN
+F 2 "" H 6350 2750 50  0000 C CNN
+F 3 "" H 6350 2750 50  0000 C CNN
+	1    6350 2750
+	1    0    0    -1  
+$EndComp
+Text Notes 2450 2400 0    60   ~ 0
+VCC: 8.7V-12V
+$Comp
+L CONN_01X02 P2
+U 1 1 59AF80AC
+P 6550 2700
+F 0 "P2" H 6628 2741 50  0000 L CNN
+F 1 "CONN_01X02" H 6628 2650 50  0000 L CNN
+F 2 "myelin/myelin-kicad.pretty:header_01x02_40mil_60mil" H 6550 2700 50  0001 C CNN
+F 3 "" H 6550 2700 50  0000 C CNN
+	1    6550 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 59AFA07E
+P 3850 3700
+F 0 "R?" V 3643 3700 50  0000 C CNN
+F 1 "10k" V 3734 3700 50  0000 C CNN
+F 2 "apexelectrix/apex-smd-resistors.pretty:R_0805_HandSoldering" V 3780 3700 50  0001 C CNN
+F 3 "" H 3850 3700 50  0000 C CNN
+	1    3850 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 3700 3600 3700
+Wire Wire Line
+	4000 3700 4100 3700
+$EndSCHEMATC
