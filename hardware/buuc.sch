@@ -60,7 +60,7 @@ L MCP73842-840I/UN U2
 U 1 1 59AF5FE9
 P 4950 3450
 F 0 "U2" H 4925 2920 60  0000 C CNN
-F 1 "MCP73842-840I/UN" H 4925 2814 60  0000 C CNN
+F 1 "MCP73842-840I/UN" H 4950 2750 60  0000 C CNN
 F 2 "mcous/kicad-lib/footprints/soic.pretty:SOIC8" H 4950 3450 60  0001 C CNN
 F 3 "" H 4950 3450 60  0001 C CNN
 	1    4950 3450
@@ -224,12 +224,12 @@ $EndComp
 $Comp
 L R R1
 U 1 1 59AF6B9E
-P 4050 4050
-F 0 "R1" V 3843 4050 50  0000 C CNN
-F 1 "100k" V 3934 4050 50  0000 C CNN
-F 2 "apexelectrix/apex-smd-resistors.pretty:R_0805_HandSoldering" V 3980 4050 50  0001 C CNN
-F 3 "" H 4050 4050 50  0000 C CNN
-	1    4050 4050
+P 4050 3900
+F 0 "R1" V 3843 3900 50  0000 C CNN
+F 1 "100k" V 3934 3900 50  0000 C CNN
+F 2 "apexelectrix/apex-smd-resistors.pretty:R_0805_HandSoldering" V 3980 3900 50  0001 C CNN
+F 3 "" H 4050 3900 50  0000 C CNN
+	1    4050 3900
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -238,16 +238,8 @@ Wire Wire Line
 	3100 2950 3100 3100
 Wire Wire Line
 	3100 3400 3100 3550
-Wire Wire Line
-	3600 2950 3600 4050
 Connection ~ 3600 2950
-Wire Wire Line
-	3600 4050 3900 4050
 Connection ~ 3600 3700
-Wire Wire Line
-	4200 4050 4400 4050
-Wire Wire Line
-	4400 4050 4400 3800
 Wire Wire Line
 	3100 2950 4450 2950
 Wire Wire Line
@@ -346,10 +338,10 @@ F 3 "" H 6550 2700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R?
+L R R3
 U 1 1 59AFA07E
 P 3850 3700
-F 0 "R?" V 3643 3700 50  0000 C CNN
+F 0 "R3" V 3643 3700 50  0000 C CNN
 F 1 "10k" V 3734 3700 50  0000 C CNN
 F 2 "apexelectrix/apex-smd-resistors.pretty:R_0805_HandSoldering" V 3780 3700 50  0001 C CNN
 F 3 "" H 3850 3700 50  0000 C CNN
@@ -360,4 +352,92 @@ Wire Wire Line
 	3700 3700 3600 3700
 Wire Wire Line
 	4000 3700 4100 3700
+Wire Wire Line
+	3600 2950 3600 3900
+Wire Wire Line
+	3600 3900 3900 3900
+Wire Wire Line
+	4200 3900 4250 3900
+Wire Wire Line
+	4250 3900 4250 3800
+Wire Wire Line
+	4250 3800 4400 3800
+Wire Wire Line
+	5450 3800 5550 3800
+Wire Wire Line
+	5550 3800 5550 4150
+Wire Wire Line
+	5550 4150 5750 4150
+$Comp
+L C C?
+U 1 1 59AFAA35
+P 5900 4150
+F 0 "C?" V 5648 4150 50  0000 C CNN
+F 1 "0.1u" V 5739 4150 50  0000 C CNN
+F 2 "" H 5938 4000 50  0000 C CNN
+F 3 "" H 5900 4150 50  0000 C CNN
+	1    5900 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59AFAA9C
+P 6150 4150
+F 0 "#PWR?" H 6150 3900 50  0001 C CNN
+F 1 "GND" H 6155 3977 50  0000 C CNN
+F 2 "" H 6150 4150 50  0000 C CNN
+F 3 "" H 6150 4150 50  0000 C CNN
+	1    6150 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 4150 6150 4150
+$Comp
+L R R?
+U 1 1 59AFAD5C
+P 5050 4550
+F 0 "R?" V 4843 4550 50  0000 C CNN
+F 1 "1k" V 4934 4550 50  0000 C CNN
+F 2 "apexelectrix/apex-smd-resistors.pretty:R_0805_HandSoldering" V 4980 4550 50  0001 C CNN
+F 3 "" H 5050 4550 50  0000 C CNN
+	1    5050 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 59AFADA7
+P 5550 4550
+F 0 "R?" V 5343 4550 50  0000 C CNN
+F 1 "200" V 5434 4550 50  0000 C CNN
+F 2 "apexelectrix/apex-smd-resistors.pretty:R_0805_HandSoldering" V 5480 4550 50  0001 C CNN
+F 3 "" H 5550 4550 50  0000 C CNN
+	1    5550 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 4550 6050 4550
+Wire Wire Line
+	6050 4550 6050 4150
+Wire Wire Line
+	5450 3950 5450 4300
+Wire Wire Line
+	5450 4300 5300 4300
+Wire Wire Line
+	5300 4300 5300 4550
+Wire Wire Line
+	5200 4550 5400 4550
+Connection ~ 5300 4550
+$Comp
+L +5V #PWR?
+U 1 1 59AFAFDA
+P 4750 4550
+F 0 "#PWR?" H 4750 4400 50  0001 C CNN
+F 1 "+5V" V 4765 4678 50  0000 L CNN
+F 2 "" H 4750 4550 50  0000 C CNN
+F 3 "" H 4750 4550 50  0000 C CNN
+	1    4750 4550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4750 4550 4900 4550
 $EndSCHEMATC
