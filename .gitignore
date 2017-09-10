@@ -5,3 +5,5 @@
 *.gbj
 *.flatcam
 *.*-bak
+*.bak
+.DS_Store
