@@ -1,9 +1,7 @@
-.pioenvs
-.piolibdeps
-*-bak
-*.bak
-*-cache.lib
-fp-lib-table
-.DS_Store
-_saved*
-_autosave*
+*.drl
+*.pdf
+*.gcode
+*.gbr
+*.gbj
+*.flatcam
+*.*-bak
