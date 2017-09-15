@@ -205,7 +205,7 @@ U 1 1 59AF69FF
 P 4600 2950
 F 0 "R2" V 4393 2950 50  0000 C CNN
 F 1 "100m" V 4484 2950 50  0000 C CNN
-F 2 "apexelectrix/apex-smd-resistors.pretty:R_0805_HandSoldering" V 4530 2950 50  0001 C CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:0805_Milling" V 4530 2950 50  0001 C CNN
 F 3 "" H 4600 2950 50  0000 C CNN
 	1    4600 2950
 	0    1    1    0   
@@ -216,7 +216,7 @@ U 1 1 59AF6A65
 P 4250 3700
 F 0 "D2" H 4242 3445 50  0000 C CNN
 F 1 "LED" H 4242 3536 50  0000 C CNN
-F 2 "adamgreig/agg-kicad/agg.pretty:0805-LED" H 4250 3700 50  0001 C CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:0805_Milling" H 4250 3700 50  0001 C CNN
 F 3 "" H 4250 3700 50  0000 C CNN
 	1    4250 3700
 	-1   0    0    1   
@@ -227,7 +227,7 @@ U 1 1 59AF6B9E
 P 4050 3900
 F 0 "R1" V 3843 3900 50  0000 C CNN
 F 1 "100k" V 3934 3900 50  0000 C CNN
-F 2 "apexelectrix/apex-smd-resistors.pretty:R_0805_HandSoldering" V 3980 3900 50  0001 C CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:0805_Milling" V 3980 3900 50  0001 C CNN
 F 3 "" H 4050 3900 50  0000 C CNN
 	1    4050 3900
 	0    1    1    0   
@@ -343,7 +343,7 @@ U 1 1 59AFA07E
 P 3850 3700
 F 0 "R3" V 3643 3700 50  0000 C CNN
 F 1 "10k" V 3734 3700 50  0000 C CNN
-F 2 "apexelectrix/apex-smd-resistors.pretty:R_0805_HandSoldering" V 3780 3700 50  0001 C CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:0805_Milling" V 3780 3700 50  0001 C CNN
 F 3 "" H 3850 3700 50  0000 C CNN
 	1    3850 3700
 	0    1    1    0   
@@ -374,7 +374,7 @@ U 1 1 59AFAA35
 P 5900 4150
 F 0 "C3" V 5648 4150 50  0000 C CNN
 F 1 "0.1u" V 5739 4150 50  0000 C CNN
-F 2 "KiCad/Capacitors_SMD.pretty:C_0805_HandSoldering" H 5938 4000 50  0001 C CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:0805_Milling" H 5938 4000 50  0001 C CNN
 F 3 "" H 5900 4150 50  0000 C CNN
 	1    5900 4150
 	0    1    1    0   
@@ -397,8 +397,8 @@ L R R4
 U 1 1 59AFAD5C
 P 5050 4550
 F 0 "R4" V 4843 4550 50  0000 C CNN
-F 1 "1k" V 4934 4550 50  0000 C CNN
-F 2 "apexelectrix/apex-smd-resistors.pretty:R_0805_HandSoldering" V 4980 4550 50  0001 C CNN
+F 1 "33k" V 4934 4550 50  0000 C CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:0805_Milling" V 4980 4550 50  0001 C CNN
 F 3 "" H 5050 4550 50  0000 C CNN
 	1    5050 4550
 	0    1    1    0   
@@ -408,8 +408,8 @@ L R R5
 U 1 1 59AFADA7
 P 5550 4550
 F 0 "R5" V 5343 4550 50  0000 C CNN
-F 1 "200" V 5434 4550 50  0000 C CNN
-F 2 "apexelectrix/apex-smd-resistors.pretty:R_0805_HandSoldering" V 5480 4550 50  0001 C CNN
+F 1 "6.8k" V 5434 4550 50  0000 C CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:0805_Milling" V 5480 4550 50  0001 C CNN
 F 3 "" H 5550 4550 50  0000 C CNN
 	1    5550 4550
 	0    1    1    0   
@@ -441,12 +441,12 @@ $EndComp
 Wire Wire Line
 	4750 4550 4900 4550
 $Comp
-L MIC2005A U?
+L MIC2005A U3
 U 1 1 59BADA49
 P 2900 1750
-F 0 "U?" H 2900 2097 60  0000 C CNN
+F 0 "U3" H 2900 2097 60  0000 C CNN
 F 1 "MIC2005A" H 2900 1991 60  0000 C CNN
-F 2 "" H 2900 1750 60  0001 C CNN
+F 2 "adamgreig/agg-kicad/agg.pretty:SOT-23-6" H 2900 1750 60  0001 C CNN
 F 3 "" H 2900 1750 60  0001 C CNN
 	1    2900 1750
 	1    0    0    -1  
@@ -454,10 +454,10 @@ $EndComp
 Wire Wire Line
 	3550 1650 3400 1650
 $Comp
-L GND #PWR?
+L GND #PWR014
 U 1 1 59BADB64
 P 2050 1750
-F 0 "#PWR?" H 2050 1500 50  0001 C CNN
+F 0 "#PWR014" H 2050 1500 50  0001 C CNN
 F 1 "GND" H 2055 1577 50  0000 C CNN
 F 2 "" H 2050 1750 50  0000 C CNN
 F 3 "" H 2050 1750 50  0000 C CNN
@@ -467,12 +467,12 @@ $EndComp
 Wire Wire Line
 	2400 1750 2050 1750
 $Comp
-L R R?
+L R R6
 U 1 1 59BADC60
 P 2050 2100
-F 0 "R?" V 1843 2100 50  0000 C CNN
+F 0 "R6" V 1843 2100 50  0000 C CNN
 F 1 "10k" V 1934 2100 50  0000 C CNN
-F 2 "apexelectrix/apex-smd-resistors.pretty:R_0805_HandSoldering" V 1980 2100 50  0001 C CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:0805_Milling" V 1980 2100 50  0001 C CNN
 F 3 "" H 2050 2100 50  0000 C CNN
 	1    2050 2100
 	0    -1   -1   0   
@@ -487,12 +487,12 @@ Wire Wire Line
 	1900 2100 1900 1650
 Connection ~ 1900 1650
 $Comp
-L C C?
+L C C4
 U 1 1 59BAE16D
 P 2200 1400
-F 0 "C?" V 1948 1400 50  0000 C CNN
+F 0 "C4" V 1948 1400 50  0000 C CNN
 F 1 "0.1u" V 2039 1400 50  0000 C CNN
-F 2 "KiCad/Capacitors_SMD.pretty:C_0805_HandSoldering" H 2238 1250 50  0001 C CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:0805_Milling" H 2238 1250 50  0001 C CNN
 F 3 "" H 2200 1400 50  0000 C CNN
 	1    2200 1400
 	0    1    1    0   
