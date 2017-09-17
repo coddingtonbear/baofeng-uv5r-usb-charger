@@ -7,3 +7,4 @@
 *.*-bak
 *.bak
 .DS_Store
+*-rescue.lib

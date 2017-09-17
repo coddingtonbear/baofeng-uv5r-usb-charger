@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:buuc-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -441,7 +442,7 @@ $EndComp
 Wire Wire Line
 	4750 4550 4900 4550
 $Comp
-L MIC2005A U3
+L MIC2005A-RESCUE-buuc U3
 U 1 1 59BADA49
 P 2900 1750
 F 0 "U3" H 2900 2097 60  0000 C CNN
@@ -456,36 +457,27 @@ Wire Wire Line
 $Comp
 L GND #PWR014
 U 1 1 59BADB64
-P 2050 1750
-F 0 "#PWR014" H 2050 1500 50  0001 C CNN
-F 1 "GND" H 2055 1577 50  0000 C CNN
-F 2 "" H 2050 1750 50  0000 C CNN
-F 3 "" H 2050 1750 50  0000 C CNN
-	1    2050 1750
+P 1800 2100
+F 0 "#PWR014" H 1800 1850 50  0001 C CNN
+F 1 "GND" H 1805 1927 50  0000 C CNN
+F 2 "" H 1800 2100 50  0000 C CNN
+F 3 "" H 1800 2100 50  0000 C CNN
+	1    1800 2100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2400 1750 2050 1750
+	1800 1750 2400 1750
 $Comp
 L R R6
 U 1 1 59BADC60
-P 2050 2100
-F 0 "R6" V 1843 2100 50  0000 C CNN
-F 1 "10k" V 1934 2100 50  0000 C CNN
-F 2 "coddingtonbear/coddingtonbear.pretty:0805_Milling" V 1980 2100 50  0001 C CNN
-F 3 "" H 2050 2100 50  0000 C CNN
-	1    2050 2100
-	0    -1   -1   0   
+P 2150 1950
+F 0 "R6" V 1943 1950 50  0000 C CNN
+F 1 "10k" V 2034 1950 50  0000 C CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:0805_Milling" V 2080 1950 50  0001 C CNN
+F 3 "" H 2150 1950 50  0000 C CNN
+	1    2150 1950
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2200 2100 2300 2100
-Wire Wire Line
-	2300 2100 2300 1900
-Wire Wire Line
-	2300 1900 2400 1900
-Wire Wire Line
-	1900 2100 1900 1650
-Connection ~ 1900 1650
 $Comp
 L C C4
 U 1 1 59BAE16D
@@ -503,4 +495,13 @@ Connection ~ 2350 1750
 Wire Wire Line
 	2050 1400 2050 1650
 Connection ~ 2050 1650
+Wire Wire Line
+	2150 1800 2150 1750
+Connection ~ 2150 1750
+Wire Wire Line
+	2150 2100 2400 2100
+Wire Wire Line
+	2400 2100 2400 1900
+Wire Wire Line
+	1800 1750 1800 2100
 $EndSCHEMATC
