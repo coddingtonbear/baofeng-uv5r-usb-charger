@@ -202,13 +202,13 @@ $EndComp
 $Comp
 L R R2
 U 1 1 59AF69FF
-P 4600 2950
-F 0 "R2" V 4393 2950 50  0000 C CNN
-F 1 "100m" V 4484 2950 50  0000 C CNN
-F 2 "coddingtonbear/coddingtonbear.pretty:0805_Milling" V 4530 2950 50  0001 C CNN
-F 3 "" H 4600 2950 50  0000 C CNN
-	1    4600 2950
-	0    1    1    0   
+P 3950 1900
+F 0 "R2" V 3743 1900 50  0000 C CNN
+F 1 "0" V 3834 1900 50  0000 C CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:0805_Milling" V 3880 1900 50  0001 C CNN
+F 3 "" H 3950 1900 50  0000 C CNN
+	1    3950 1900
+	-1   0    0    1   
 $EndComp
 $Comp
 L LED D2
@@ -241,16 +241,11 @@ Wire Wire Line
 Connection ~ 3600 2950
 Connection ~ 3600 3700
 Wire Wire Line
-	3100 2950 4450 2950
-Wire Wire Line
 	4400 3600 4050 3600
 Wire Wire Line
 	4050 3600 4050 2950
-Connection ~ 4050 2950
 Wire Wire Line
-	4750 2950 4900 2950
-Wire Wire Line
-	4900 2650 4900 3050
+	4900 1750 4900 3050
 $Comp
 L NDS8434 Q1
 U 1 1 59AF709A
@@ -268,7 +263,6 @@ Wire Wire Line
 	5300 3050 5300 2950
 Wire Wire Line
 	4900 2650 5050 2650
-Connection ~ 4900 2950
 Wire Wire Line
 	5450 3600 5450 2650
 $Comp
@@ -503,4 +497,140 @@ Wire Wire Line
 	2400 2100 2400 1900
 Wire Wire Line
 	1800 1750 1800 2100
+$Comp
+L R R?
+U 1 1 59C097A1
+P 3950 2700
+F 0 "R?" V 3743 2700 50  0000 C CNN
+F 1 "100m" V 3834 2700 50  0000 C CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:0805_Milling" V 3880 2700 50  0001 C CNN
+F 3 "" H 3950 2700 50  0000 C CNN
+	1    3950 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 59C0980C
+P 3950 2300
+F 0 "R?" V 3743 2300 50  0000 C CNN
+F 1 "0" V 3834 2300 50  0000 C CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:0805_Milling" V 3880 2300 50  0001 C CNN
+F 3 "" H 3950 2300 50  0000 C CNN
+	1    3950 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 59C09A2E
+P 4300 2700
+F 0 "R?" V 4093 2700 50  0000 C CNN
+F 1 "0" V 4184 2700 50  0000 C CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:0805_Milling" V 4230 2700 50  0001 C CNN
+F 3 "" H 4300 2700 50  0000 C CNN
+	1    4300 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 59C09A8A
+P 4300 2300
+F 0 "R?" V 4093 2300 50  0000 C CNN
+F 1 "0" V 4184 2300 50  0000 C CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:0805_Milling" V 4230 2300 50  0001 C CNN
+F 3 "" H 4300 2300 50  0000 C CNN
+	1    4300 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 59C09AD2
+P 4300 1900
+F 0 "R?" V 4093 1900 50  0000 C CNN
+F 1 "0" V 4184 1900 50  0000 C CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:0805_Milling" V 4230 1900 50  0001 C CNN
+F 3 "" H 4300 1900 50  0000 C CNN
+	1    4300 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 59C09B3C
+P 4650 2700
+F 0 "R?" V 4443 2700 50  0000 C CNN
+F 1 "0" V 4534 2700 50  0000 C CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:0805_Milling" V 4580 2700 50  0001 C CNN
+F 3 "" H 4650 2700 50  0000 C CNN
+	1    4650 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 59C0A0C4
+P 4650 2300
+F 0 "R?" V 4443 2300 50  0000 C CNN
+F 1 "0" V 4534 2300 50  0000 C CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:0805_Milling" V 4580 2300 50  0001 C CNN
+F 3 "" H 4650 2300 50  0000 C CNN
+	1    4650 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 59C0A112
+P 4650 1900
+F 0 "R?" V 4443 1900 50  0000 C CNN
+F 1 "0" V 4534 1900 50  0000 C CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:0805_Milling" V 4580 1900 50  0001 C CNN
+F 3 "" H 4650 1900 50  0000 C CNN
+	1    4650 1900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 2950 3100 2950
+Wire Wire Line
+	3950 2950 3950 2850
+Connection ~ 3950 2950
+Wire Wire Line
+	3950 2550 3950 2450
+Wire Wire Line
+	3950 2150 3950 2050
+Wire Wire Line
+	3950 1750 4300 1750
+Wire Wire Line
+	4300 2050 4300 2150
+Wire Wire Line
+	4300 2450 4300 2550
+Wire Wire Line
+	4300 2850 4300 2950
+Wire Wire Line
+	4300 2950 4650 2950
+Wire Wire Line
+	4650 2950 4650 2850
+Wire Wire Line
+	4650 2550 4650 2450
+Wire Wire Line
+	4650 2150 4650 2050
+Wire Wire Line
+	4650 1750 4900 1750
+Connection ~ 4900 2650
+$Comp
+L R R?
+U 1 1 59C0A9C6
+P 2900 1100
+F 0 "R?" V 2693 1100 50  0000 C CNN
+F 1 "EMPTY" V 2784 1100 50  0000 C CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:0805_Milling" V 2830 1100 50  0001 C CNN
+F 3 "" H 2900 1100 50  0000 C CNN
+	1    2900 1100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2400 1650 2400 1100
+Wire Wire Line
+	2400 1100 2750 1100
+Wire Wire Line
+	3050 1100 3500 1100
+Wire Wire Line
+	3500 1100 3500 1650
+Connection ~ 3500 1650
 $EndSCHEMATC
