@@ -1,11 +1,8 @@
-(kicad_pcb (version 20160815) (host pcbnew "(2016-12-18 revision 3ffa37c)-master")
+(kicad_pcb (version 20170123) (host pcbnew no-vcs-found-e2505cb~60~ubuntu16.04.1)
 
   (general
-    (links 39)
-    (no_connects 0)
-    (area 46.914999 34.214999 92.150001 64.210001)
     (thickness 1.6)
-    (drawings 8)
+    (drawings 4)
     (tracks 121)
     (zones 0)
     (modules 18)
@@ -37,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.35)
+    (last_trace_width 0.25)
     (user_trace_width 0.25)
     (user_trace_width 0.35)
     (trace_clearance 0.2)
@@ -63,13 +60,14 @@
     (pad_size 1.524 1.524)
     (pad_drill 0.762)
     (pad_to_mask_clearance 0.2)
-    (aux_axis_origin 135.255 81.915)
+    (aux_axis_origin 46.99 64.008)
     (visible_elements FFFFFF7F)
     (pcbplotparams
-      (layerselection 0x000c0_ffffffff)
+      (layerselection 0x01000_ffffffff)
       (usegerberextensions false)
       (usegerberattributes true)
       (usegerberadvancedattributes true)
+      (creategerberjobfile true)
       (excludeedgelayer true)
       (linewidth 0.100000)
       (plotframeref false)
@@ -117,13 +115,11 @@
 
   (net_class Default "This is the default net class."
     (clearance 0.2)
-    (trace_width 0.45)
+    (trace_width 0.25)
     (via_dia 1.5)
     (via_drill 0.5)
     (uvia_dia 0.3)
     (uvia_drill 0.1)
-    (diff_pair_gap 0.25)
-    (diff_pair_width 0.2)
     (add_net +5V)
     (add_net +BATT)
     (add_net GND)
@@ -730,10 +726,6 @@
     )
   )
 
-  (target plus (at 93.345 33.02) (size 5) (width 0.15) (layer Edge.Cuts))
-  (target x (at 79.375 66.675) (size 5) (width 0.15) (layer Edge.Cuts))
-  (target plus (at 45.72 65.405) (size 5) (width 0.15) (layer Edge.Cuts))
-  (target plus (at 45.72 33.02) (size 5) (width 0.15) (layer Edge.Cuts))
   (gr_line (start 46.99 64.135) (end 46.99 34.29) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 92.075 64.135) (end 46.99 64.135) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 92.075 34.29) (end 92.075 64.135) (angle 90) (layer Edge.Cuts) (width 0.15))

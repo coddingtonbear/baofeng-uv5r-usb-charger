@@ -29,7 +29,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:coddingtonbear
 LIBS:buuc-cache
 EELAYER 26 0
 EELAYER END
@@ -46,7 +45,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L USB_OTG P1
+L USB_OTG-RESCUE-buuc P1
 U 1 1 59AF531F
 P 1550 1450
 F 0 "P1" V 1580 1638 50  0000 L CNN
