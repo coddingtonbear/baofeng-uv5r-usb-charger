@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2
+EESchema Schematic File Version 3
 LIBS:buuc-rescue
 LIBS:power
 LIBS:device
@@ -51,7 +51,7 @@ U 1 1 59AF531F
 P 1550 1450
 F 0 "P1" V 1580 1638 50  0000 L CNN
 F 1 "USB_OTG" V 1671 1638 50  0000 L CNN
-F 2 "coddingtonbear/coddingtonbear.pretty:USB_Thru_hole" V 1500 1350 50  0001 C CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:UJ2-MIBH-4-SMT" V 1500 1350 50  0001 C CNN
 F 3 "" V 1500 1350 50  0000 C CNN
 	1    1550 1450
 	0    -1   -1   0   
@@ -159,8 +159,8 @@ L CP C1
 U 1 1 59AF6882
 P 3100 3250
 F 0 "C1" H 3218 3296 50  0000 L CNN
-F 1 "10u" H 3218 3205 50  0000 L CNN
-F 2 "pelrun/libKiCad/footprint/w_smd_cap.pretty:c_elec_5x5.8" H 3138 3100 50  0001 C CNN
+F 1 "22uF" H 3218 3205 50  0000 L CNN
+F 2 "KiCad/Capacitors_SMD.pretty:C_1206_HandSoldering" H 3138 3100 50  0001 C CNN
 F 3 "" H 3100 3250 50  0000 C CNN
 	1    3100 3250
 	1    0    0    -1  
@@ -258,8 +258,8 @@ L CP C2
 U 1 1 59AF72A1
 P 5650 3550
 F 0 "C2" H 5768 3596 50  0000 L CNN
-F 1 "10u" H 5768 3505 50  0000 L CNN
-F 2 "pelrun/libKiCad/footprint/w_smd_cap.pretty:c_elec_5x5.8" H 5688 3400 50  0001 C CNN
+F 1 "22uF" H 5768 3505 50  0000 L CNN
+F 2 "KiCad/Capacitors_SMD.pretty:C_1206_HandSoldering" H 5688 3400 50  0001 C CNN
 F 3 "" H 5650 3550 50  0000 C CNN
 	1    5650 3550
 	1    0    0    -1  
@@ -308,17 +308,6 @@ F 3 "" H 6350 2750 50  0000 C CNN
 $EndComp
 Text Notes 2400 2550 0    60   ~ 0
 VCC: 8.7V-12V
-$Comp
-L CONN_01X02 P2
-U 1 1 59AF80AC
-P 6550 2700
-F 0 "P2" H 6628 2741 50  0000 L CNN
-F 1 "CONN_01X02" H 6628 2650 50  0000 L CNN
-F 2 "myelin/myelin-kicad.pretty:header_01x02_40mil_60mil" H 6550 2700 50  0001 C CNN
-F 3 "" H 6550 2700 50  0000 C CNN
-	1    6550 2700
-	1    0    0    -1  
-$EndComp
 $Comp
 L R R3
 U 1 1 59AFA07E
@@ -469,4 +458,31 @@ F 3 "" H 2000 1650 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	1850 1650 2000 1650
+$Comp
+L Conn_01x01 J1
+U 1 1 59D1854E
+P 6550 2650
+F 0 "J1" H 6630 2692 50  0000 L CNN
+F 1 "RADIO+" H 6630 2601 50  0000 L CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:TAB" H 6550 2650 50  0001 C CNN
+F 3 "" H 6550 2650 50  0001 C CNN
+	1    6550 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J2
+U 1 1 59D18593
+P 6550 2750
+F 0 "J2" H 6630 2792 50  0000 L CNN
+F 1 "RADIO-" H 6630 2701 50  0000 L CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:TAB" H 6550 2750 50  0001 C CNN
+F 3 "" H 6550 2750 50  0001 C CNN
+	1    6550 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 1250 1900 1050
+Wire Wire Line
+	1900 1050 1450 1050
+Connection ~ 1900 1250
 $EndSCHEMATC
